@@ -1,0 +1,113 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  
+  .tabcontent {
+    color: rgb(0, 0, 0);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  
+  .head-content{
+      font-weight: 600;
+  }
+
+  .btn .tablink:hover {
+    opacity: 0.8;
+}
+
+.btn .tablink {
+    background-color: #ccc;
+    padding: 6px 17px;
+    border: 1px solid #333;
+    color: white;
+    float: left;
+    cursor: pointer;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+}
+.contianer-radio{
+  display: flex;
+  margin-bottom:  30px;
+  
+}
+
+
+.containerf {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.containerf input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+
+.containerf:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.containerf input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.containerf input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containerf .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+div.session-4 h1{
+  margin-top: 180px;
+  margin-left: 100px;
+}
